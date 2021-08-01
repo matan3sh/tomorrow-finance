@@ -1,15 +1,26 @@
+import { useState } from 'react';
+import DropDown from '../DropDown/DropDown';
+
 import {
   Container,
   Logo,
   HeaderList,
   HeaderItem,
   HeaderButton,
+  MenuBars,
 } from './styles';
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => setIsOpen((prev) => !prev);
+
   return (
     <Container>
       <Logo src='/static/images/header/logo.png' alt='Tomorrow Finance' />
+      <MenuBars onClick={toggle} />
+
+      <DropDown isOpen={isOpen} toggle={toggle} />
       <HeaderList>
         <HeaderItem>Partners</HeaderItem>
         <HeaderItem>Supporters</HeaderItem>

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { MenuIcon } from 'components/icons';
 
 export const Container = styled.header`
   position: fixed;
@@ -16,6 +17,9 @@ export const Container = styled.header`
     scrollNav && '0 0px 8px 0 rgba(31, 38, 135, 0.22)'};
   transition: 0.3s ease-in;
   z-index: 100;
+  @media screen and (max-width: 480px) {
+    padding: 10px;
+  }
 `;
 
 export const Logo = styled.img`
@@ -29,6 +33,9 @@ export const HeaderList = styled.ul`
   justify-content: center;
   align-items: center;
   gap: 50px;
+  @media screen and (max-width: 980px) {
+    display: none;
+  }
 `;
 
 export const HeaderItem = styled.li`
@@ -53,5 +60,27 @@ export const HeaderButton = styled.span`
   );
   &:hover {
     cursor: pointer;
+  }
+  @media screen and (max-width: 515px) {
+    padding: 10px 20px;
+  }
+`;
+
+export const MenuBars = styled(MenuIcon)`
+  display: none !important;
+  cursor: pointer;
+
+  @media screen and (max-width: 980px) {
+    display: block !important;
+    transform: translate(-30px, -3px);
+  }
+  @media screen and (max-width: 420px) {
+    transform: translate(-25px, 0px);
+  }
+  @media screen and (max-width: 420px) {
+    transform: translate(-25px, -5px);
+  }
+  @media screen and (max-width: 320px) {
+    transform: translate(-15px, -5px);
   }
 `;

@@ -23,6 +23,19 @@ export const HeadLine = styled.div`
   flex-direction: column;
   width: 955px;
   height: 239px;
+  @media screen and (max-width: 1422px) {
+    margin-left: 100px;
+  }
+  @media screen and (max-width: 1190px) {
+    margin-left: 20px;
+  }
+  @media screen and (max-width: 1040px) {
+    width: 885px;
+    height: 169px;
+  }
+  @media screen and (max-width: 810px) {
+    width: 100%;
+  }
   img {
     object-fit: contain;
     width: 100%;
@@ -33,6 +46,18 @@ export const Text = styled.div`
   width: 506px;
   height: 156px;
   margin-left: 200px;
+  @media screen and (max-width: 1422px) {
+    margin-left: 100px;
+  }
+  @media screen and (max-width: 1190px) {
+    margin-left: 20px;
+  }
+  @media screen and (max-width: 1040px) {
+    margin-top: 25px;
+  }
+  @media screen and (max-width: 515px) {
+    width: 300px;
+  }
 
   p {
     font-family: 'CircularStd-Regular';
@@ -40,6 +65,9 @@ export const Text = styled.div`
     font-weight: 400;
     font-size: 24px;
     font-family: CircularStd-Regular;
+    @media screen and (max-width: 515px) {
+      font-size: 20px;
+    }
   }
 `;
 
@@ -47,8 +75,18 @@ export const HeroButton = styled.div`
   margin-left: 200px;
   width: 264px;
   height: 81px;
+  @media screen and (max-width: 1422px) {
+    margin-left: 100px;
+  }
+  @media screen and (max-width: 1190px) {
+    margin-left: 20px;
+  }
   span {
     font-size: 20px;
     text-transform: uppercase;
+    @media screen and (max-width: 515px) {
+      font-size: 16px;
+      margin-top: 20px;
+    }
   }
 `;
