@@ -17,8 +17,8 @@ const Header = () => {
 
   return (
     <Container>
-      {/* <Logo src='/static/images/header/logo.png' alt='Tomorrow Finance' /> */}
-      <div></div>
+      <Logo src='/static/images/header/logo.png' alt='Tomorrow Finance' />
+      {/* <div></div> */}
       <MenuBars onClick={toggle} />
 
       <DropDown isOpen={isOpen} toggle={toggle} />
