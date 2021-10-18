@@ -45,7 +45,8 @@ export const HeadLine = styled.div`
 export const Text = styled.div`
   width: 506px;
   height: 156px;
-  margin-left: 200px;
+  margin-left: 210px;
+  margin-top: 50px;
   @media screen and (max-width: 1422px) {
     margin-left: 100px;
   }

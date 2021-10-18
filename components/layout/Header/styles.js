@@ -17,6 +17,8 @@ export const Container = styled.header`
     scrollNav && '0 0px 8px 0 rgba(31, 38, 135, 0.22)'};
   transition: 0.3s ease-in;
   z-index: 100;
+  margin: auto;
+  max-width: 1920px;
   @media screen and (max-width: 480px) {
     padding: 10px;
   }
