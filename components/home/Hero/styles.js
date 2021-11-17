@@ -13,6 +13,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: auto;
 `;
 
 export const HeadLine = styled.div`
@@ -45,8 +46,7 @@ export const HeadLine = styled.div`
 export const Text = styled.div`
   width: 506px;
   height: 156px;
-  margin-left: 210px;
-  margin-top: 50px;
+  margin-left: 200px;
   @media screen and (max-width: 1422px) {
     margin-left: 100px;
   }

@@ -3,8 +3,6 @@ import Head from 'next/head';
 import { Header } from 'components/layout';
 import { Hero } from 'components/home';
 
-import { Container } from 'styles';
-
 export default function Home() {
   return (
     <>
@@ -19,10 +17,8 @@ export default function Home() {
           content='banks,crypto bitcoin, ethereum, revolut, kraken, visa, circle, digital bank'
         />
       </Head>
-      <Container>
-        <Header />
-        <Hero />
-      </Container>
+      <Header />
+      <Hero />
     </>
   );
 }
